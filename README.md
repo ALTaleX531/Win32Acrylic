@@ -1,6 +1,8 @@
 # Win32Acrylic
-Using WinRT API to get standard Acrylic Blur or Mica WITHOUT Win2D and WinRT Projection Library, inspired by [Enabling Backdrop Blur](https://notes.yvt.jp/Desktop-Apps/Enabling-Backdrop-Blur/)	
-This sample included two Acrylic Blur Recipes which are targeted for different version of Windows, and one Mica recipe.  	
+Using WinRT API to get standard Acrylic Blur or Mica WITHOUT Win2D and WinRT Projection Library, inspired by [Enabling Backdrop Blur](https://notes.yvt.jp/Desktop-Apps/Enabling-Backdrop-Blur/)
+
+This sample included two Acrylic Blur Recipes which are targeted for different version of Windows, and one Mica recipe.
+
 All of the recipes are originated from the repo [microsoft-ui-xaml](https://github.com/microsoft/microsoft-ui-xaml).	
 # Preview
 ![Acrylic](Images/acrylic.png)
