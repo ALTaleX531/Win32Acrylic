@@ -1,13 +1,18 @@
 # Win32Acrylic
 Using WinRT API to get standard Acrylic Blur or Mica WITHOUT Win2D and WinRT Projection Library, inspired by [Enabling Backdrop Blur](https://notes.yvt.jp/Desktop-Apps/Enabling-Backdrop-Blur/)	
 This sample included two Acrylic Blur Recipes which are targeted for different version of Windows, and one Mica recipe.  	
-All of them are originated from the repo [microsoft-ui-xaml](https://github.com/microsoft/microsoft-ui-xaml).	
+All of the recipes are originated from the repo [microsoft-ui-xaml](https://github.com/microsoft/microsoft-ui-xaml).	
 # Preview
 ![Acrylic](Images/acrylic.png)
+
 Acrylic
+
 ![Acrylic_Legacy](Images/acrylic_legacy.png)
+
 Acrylic (Legacy)
+
 ![Mica](Images/mica.png)
+
 Mica
 # Customizability
 - [x] Blur Amount
@@ -44,5 +49,5 @@ auto EnableBackdropSupport(HWND hwnd, bool bEnable)
 	return SetWindowCompositionAttribute(hwnd, &data);
 }
 ```
-The difference between HostbackdropBrush and BackdropBrush is that BackdropBrush samples the area behind the visual and directly rendered to the screen, but HostbackdropBrush samples the area behind the window to which the composition target of target visual belongs and rendered it to the redirection surface so we can see the content in a Dwm thumbnail.	
+The difference between HostbackdropBrush and BackdropBrush is that BackdropBrush samples the area behind the visual and directly rendered to the screen, but HostbackdropBrush samples the area behind the window to which the composition target of target visual belongs and rendered it to the redirection surface so we can see the content in a DWM thumbnail.	
 So for security reasons the HostbackdropBrush has a certain blur amount itself.		
